@@ -8,7 +8,6 @@ import java.nio.file.StandardCopyOption;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
  class Backuper {
 
     private String from;
@@ -36,9 +35,7 @@ import java.util.TimerTask;
 
 
     private void backupData(File folder) {
-
             File[] fileNames = folder.listFiles();
-
             for (File file : fileNames){
                 // if directory call the same method again
                 if (file.isDirectory()) {
